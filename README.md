@@ -1,6 +1,6 @@
 # Portfolio of Vinayak Singh
 
-<img src ="./assets/home-screen.png" />
+<img src ="./src/assets/home" />
  
 This project was created with CRA (Create React App)
 
