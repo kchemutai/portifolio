@@ -1,4 +1,4 @@
-# Portfolio of Vinayak Singh
+# Portfolio of Kevin Chemutai
 
 <img src ="./src/assets/home" />
  
