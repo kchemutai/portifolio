@@ -8,12 +8,12 @@ export function Contact() {
 		<Container id="contact">
 			<header>
 				<h2>Contact</h2>
-				<p>Ready to get started on your project? </p>
-				<p>Contact me now for a Free consultation.</p>
+				<p>Ready to get in touch with me? </p>
+				<p>Contact me now to have a quick chat.</p>
 			</header>
 			<div className="contacts">
 				<div>
-					<a href="mailto:Hello@vinayaksingh.com">
+					<a href="mailto:kchemutai@gmail.com">
 						<img src={emailIcon} alt="Email" />
 					</a>
 					<a href="mailto:Hello@vinayaksingh.com">kchemutai@gmail.com</a>
@@ -22,7 +22,7 @@ export function Contact() {
 					<a href="tel:+16412339752">
 						<img src={phoneIcon} alt="Phone No" />
 					</a>
-					<a href="tel:+919630576848">(+1) 6412339752</a>
+					<a href="tel:+16412339752">(+1) 6412339752</a>
 				</div>
 			</div>
 			<Form></Form>

@@ -1,14 +1,16 @@
 import { Container } from "./styles";
 import KevinChemutai from "../../assets/profile_final.png";
-import wordpress from "../../assets/wordpress.svg";
-import shopify from "../../assets/shopify.svg";
+import springBoot from "../../assets/spring-icon-svgrepo-com.svg";
+import flask from "../../assets/pocoo_flask-ar21.svg";
+import aws from "../../assets/aws-icon.svg";
+import gcp from "../../assets/google-cloud.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
+import angular from "../../assets/angular.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -24,7 +26,7 @@ export function About() {
 						Hi there! I'm Kevin, a Software Engineer with a passion for creating
 						software solutions that tranform the world. With a skill set including
 						fronend languages HTML, CSS, JavaScript, React, Angular, backend languages
-						Java, Python I have the tools to bring any Web Development ideas vision to
+						Java and Python, I have the tools to bring any Web Development ideas to
 						life.
 					</p>
 				</ScrollAnimation>
@@ -37,15 +39,15 @@ export function About() {
 						But my services go beyond just development - I'm also proficient in using
 						Automation tools and Cloud Technologies like Jenkins, AWS and GCP making
 						it easy for deployments and cost saving by taking advantage of on demand
-						delivery of computer power & storage.
+						delivery of compute power & storage.
 					</p>
 				</ScrollAnimation>
 				<ScrollAnimation animateIn="fadeInLeft" delay={0.3 * 1000}>
 					<p>
 						So if you're in need of a Software Engineer to help to digitalize your
-						current business workflows and boost sales and online presence, I'd love
-						to chat and see how I can help. Let's bring your dreams to reality
-						together!
+						current business workflows in a cost effective manner and boost online
+						presence, I'd love to chat and see how I can help. Let's bring your dreams
+						to reality together!
 					</p>
 				</ScrollAnimation>
 
@@ -55,12 +57,12 @@ export function About() {
 				<div className="hard-skills">
 					<div className="hability">
 						<ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
-							<img src={wordpress} alt="Wordpress" />
+							<img src={springBoot} alt="Spring Boot" />
 						</ScrollAnimation>
 					</div>
 					<div className="hability">
 						<ScrollAnimation animateIn="fadeInUp" delay={0.12 * 1000}>
-							<img src={shopify} alt="shopify" />
+							<img src={flask} alt="flask" />
 						</ScrollAnimation>
 					</div>
 					<div className="hability">
@@ -75,7 +77,7 @@ export function About() {
 					</div>
 					<div className="hability">
 						<ScrollAnimation animateIn="fadeInUp" delay={0.15 * 1000}>
-							<img src={vueIcon} alt="Vue" />
+							<img src={angular} alt="Angular" />
 						</ScrollAnimation>
 					</div>
 					<div className="hability">
@@ -103,6 +105,16 @@ export function About() {
 					<div className="hability">
 						<ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
 							<img src={jsIcon} alt="JavaScript" />
+						</ScrollAnimation>
+					</div>
+					<div className="hability">
+						<ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
+							<img src={aws} alt="AWS" />
+						</ScrollAnimation>
+					</div>
+					<div className="hability">
+						<ScrollAnimation animateIn="fadeInUp" delay={0.19 * 1000}>
+							<img src={gcp} alt="GCP" />
 						</ScrollAnimation>
 					</div>
 				</div>

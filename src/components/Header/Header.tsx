@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { NavHashLink, HashLink } from "react-router-hash-link";
 import { useState } from "react";
 
-import CV from "../../assets/CV_VinayakSingh.pdf";
+import CV from "../../assets/CHEMUTAI_Kevin24-Resume.pdf";
 export function Header() {
 	const [isActive, setActive] = useState(false);
 
