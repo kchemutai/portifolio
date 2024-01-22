@@ -9,6 +9,10 @@ export function Form() {
 	const [state, handleSubmit] = useForm("xknkpqry");
 
 	const [validEmail, setValidEmail] = useState(false);
+	const [phoneNumber, setPhoneNumber] = useState("");
+	const [validPhone, setValidPhone] = useState(false);
+	const [validName, setValidName] = useState(false);
+	const [validTitle, setValidTitle] = useState(false);
 	const [isHuman, setIsHuman] = useState(false);
 	const [message, setMessage] = useState("");
 
@@ -17,6 +21,36 @@ export function Form() {
 			setValidEmail(true);
 		} else {
 			setValidEmail(false);
+		}
+	}
+	function verifyTitle(title: string) {
+		if (title != null || title != "") {
+			setValidTitle(true);
+		} else {
+			setValidTitle(false);
+		}
+	}
+
+	function verifyPhone(phone: string) {
+		setPhoneNumber(phone);
+
+		// Check if the phone number is not empty before applying regex
+		if (phone.trim() !== "") {
+			// Regular expression for a basic phone number pattern
+			const phoneRegex = /^\d{10}$/;
+
+			// Check if the entered phone number matches the pattern
+			setValidPhone(phoneRegex.test(phone));
+		} else {
+			// If phone number is empty, consider it valid (optional)
+			setValidPhone(true);
+		}
+	}
+	function verifyName(title: string) {
+		if (title != null || title != "") {
+			setValidName(true);
+		} else {
+			setValidName(false);
 		}
 	}
 
@@ -61,6 +95,35 @@ export function Form() {
 					}}
 					required
 				/>
+				<input
+					placeholder="Title"
+					id="title"
+					type="text"
+					name="title"
+					onChange={(e) => {
+						verifyTitle(e.target.value);
+					}}
+					required
+				/>
+				<input
+					placeholder="Name"
+					id="name"
+					type="text"
+					name="name"
+					onChange={(e) => {
+						verifyName(e.target.value);
+					}}
+					required
+				/>
+				<input
+					placeholder="Phone - Optional"
+					id="phone"
+					type="number"
+					name="phone"
+					onChange={(e) => {
+						verifyPhone(e.target.value);
+					}}
+				/>
 				<ValidationError prefix="Email" field="email" errors={state.errors} />
 				<textarea
 					required
@@ -72,15 +135,16 @@ export function Form() {
 					}}
 				/>
 				<ValidationError prefix="Message" field="message" errors={state.errors} />
-				<ReCAPTCHA
-					sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
-					onChange={(e) => {
-						setIsHuman(true);
-					}}
-				></ReCAPTCHA>
 				<button
 					type="submit"
-					disabled={state.submitting || !validEmail || !message || !isHuman}
+					disabled={
+						state.submitting ||
+						!validEmail ||
+						!message ||
+						!validTitle ||
+						!validName ||
+						!validPhone
+					}
 				>
 					Submit
 				</button>
