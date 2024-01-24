@@ -24,3 +24,7 @@ This is my website to introduce myself, here I put my skills, portfolio, and con
 
 - Added more fields and validation to the contact me form.
 - Bought domain in preparation to configure cloud front and S3
+
+1/23/24:
+
+- Added functionality to get data from the form and added function that makes API calls to the backend on Submit
