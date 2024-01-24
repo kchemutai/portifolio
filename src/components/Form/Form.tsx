@@ -75,13 +75,16 @@ export function Form() {
 	async function handleApiCall(data: any) {
 		try {
 			// Make your API call using data
-			const response = await fetch("YOUR_API_ENDPOINT", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(data),
-			});
+			const response = await fetch(
+				"https://v0bgk6d2o1.execute-api.us-east-1.amazonaws.com/V1",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(data),
+				}
+			);
 
 			if (response.ok) {
 				// Handle successful API response, e.g., show success message
