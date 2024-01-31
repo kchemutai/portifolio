@@ -28,3 +28,15 @@ This is my website to introduce myself, here I put my skills, portfolio, and con
 1/23/24:
 
 - Added functionality to get data from the form and added function that makes API calls to the backend on Submit
+
+1/27/24:
+
+- Setup the backend which included API Gateway, Lambda Function, DynamoDB and SNS with relevent Permissions and Roles in IAM
+
+1/30/24:
+
+- SetUp Static web Hosting
+  - Creating S3 Bucket
+  - Configuring Route53 with my domain, hosted domain
+  - Confiuring Cloud Front
+  - Configuring Certificates

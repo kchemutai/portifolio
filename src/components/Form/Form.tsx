@@ -117,7 +117,6 @@ export function Form() {
 			console.error("Form validation failed");
 		}
 	};
-
 	if (state.succeeded) {
 		return (
 			<ContainerSucces>
@@ -143,6 +142,7 @@ export function Form() {
 					id="email"
 					type="email"
 					name="email"
+					value={email}
 					onChange={(e) => {
 						verifyEmail(e.target.value);
 					}}
@@ -153,6 +153,7 @@ export function Form() {
 					id="title"
 					type="text"
 					name="title"
+					value={title}
 					onChange={(e) => {
 						verifyTitle(e.target.value);
 					}}
@@ -163,6 +164,7 @@ export function Form() {
 					id="name"
 					type="text"
 					name="name"
+					value={name}
 					onChange={(e) => {
 						verifyName(e.target.value);
 					}}
@@ -173,6 +175,7 @@ export function Form() {
 					id="phone"
 					type="number"
 					name="phone"
+					value={phone}
 					onChange={(e) => {
 						verifyPhone(e.target.value);
 					}}
@@ -183,6 +186,7 @@ export function Form() {
 					placeholder="Send a message to get started."
 					id="message"
 					name="message"
+					value={message}
 					onChange={(e) => {
 						setMessage(e.target.value);
 					}}
