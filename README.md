@@ -40,3 +40,7 @@ This is my website to introduce myself, here I put my skills, portfolio, and con
   - Configuring Route53 with my domain, hosted domain
   - Confiuring Cloud Front
   - Configuring Certificates
+
+AWS Cloud Architecture
+
+![AWS Architecture](./src/assets/CloudArchitecture.jpg)

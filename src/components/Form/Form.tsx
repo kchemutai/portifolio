@@ -22,8 +22,8 @@ export function Form() {
 
 	function verifyEmail(email: string) {
 		if (validator.isEmail(email)) {
-			setValidEmail(true);
 			setEmail(email);
+			setValidEmail(true);
 		} else {
 			setValidEmail(false);
 		}
